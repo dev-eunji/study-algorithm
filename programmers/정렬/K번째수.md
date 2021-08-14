@@ -76,4 +76,4 @@ fun solution(array: IntArray, commands: Array<IntArray>): IntArray {
 ## 배운 점: orange4912
 - Arrays의 `slice()` 함수와 IntArray `sorted()` 함수로 Array를 자르고 정렬하기. (sort 없음)
 - slice, subList, sorted, sort 구분하여 쓰기. ide 부재로 알아 두어야 됩니다.ㅠ
-- 
+- var answer = intArrayOf() 기본 코드에 size 할당 되지 않아 indexoutofboundsexception 발생되고, 디버깅이 어려워 좋은 방법이 없을까 고민 필요
