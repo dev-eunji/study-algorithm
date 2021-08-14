@@ -52,3 +52,28 @@ fun solution(array: IntArray, commands: Array<IntArray>): IntArray =  commands.m
       return copyOfRange(indices.start, indices.endInclusive + 1).asList()
   }
   ```
+  
+  
+## 코드 : orange4912
+```kotlin
+fun solution(array: IntArray, commands: Array<IntArray>): IntArray {
+    // var answer = intArrayOf()
+    var answer = IntArray(commands.size)
+
+    if (array.size >= 100 || (commands.size < 1 && commands.size >= 50)) {
+        return answer
+    }
+
+    for (i in 0 until commands.size) {
+        val findSlice = array.slice(commands[i][0] -1 .. commands[i][1] -1).sorted()
+        answer[i] = findSlice[commands[i][2] -1]
+    }
+
+    return answer
+}
+```
+
+## 배운 점: orange4912
+- Arrays의 `slice()` 함수와 IntArray `sorted()` 함수로 Array를 자르고 정렬하기. (sort 없음)
+- slice, subList, sorted, sort 구분하여 쓰기. ide 부재로 알아 두어야 됩니다.ㅠ
+- 
