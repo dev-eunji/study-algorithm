@@ -80,3 +80,6 @@ fun solution(array: IntArray, commands: Array<IntArray>): IntArray {
   sorted를 사용할 경우 정렬된 List 타입을 반환하므로 이를 다시 저장해주어야 한다.
   단, List의 타입일 경우 sort 형태는 없고 sorted의 형태만 존재한다.
 - var answer = intArrayOf() 기본 코드에 size 할당 되지 않아 indexoutofboundsexception 발생되고, 디버깅이 어려워 좋은 방법이 없을까 고민 필요
+
+## 의문점
+- 재한 사항예외 처리 시 리턴 값은 어떻게 처리해야 되는가?
