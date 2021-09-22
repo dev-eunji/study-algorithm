@@ -69,16 +69,20 @@ for(i in 2..num) {
 ## 질문
 
 - Int 의 제곱을 구할 때 `.toDouble()` 로 형변환을 하면서 `pow()` 함수를 사용하는 것 vs. 직접구현
-> ide가 없는 경우 case exception 발생 할 가능성이 있지만 개인적으로는 직접 구현 시 디버깅(오류 및 오타)으로 함수 사용이 좋지 않을까 하는 의견입니다.
-> imprt java.util.* 필수로 쓰고 시작하는게 편한것 같습니다.
+
+  > ide가 없는 경우 case exception 발생 할 가능성이 있지만 개인적으로는 직접 구현 시 디버깅(오류 및 오타)으로 함수 사용이 좋지 않을까 하는 의견입니다.
+  > imprt java.util.\* 필수로 쓰고 시작하는게 편한것 같습니다.
 
 - sqrt : 제곱근
-`public actual inline fun sqrt(x: Double): Double = nativeMath.sqrt(x)`
- 
+  `public actual inline fun sqrt(x: Double): Double = nativeMath.sqrt(x)`
+
 - pow : n 제곱 수
-`public actual inline fun Double.pow(n: Int): Double = nativeMath.pow(this, n.toDouble())`
- 
+  `public actual inline fun Double.pow(n: Int): Double = nativeMath.pow(this, n.toDouble())`
+
 - hypot : 두 수 각각의 제곱 수를 합한 수의 제곱근
-`public actual inline fun hypot(x: Double, y: Double): Double = nativeMath.hypot(x, y)`
+  `public actual inline fun hypot(x: Double, y: Double): Double = nativeMath.hypot(x, y)`
 
 각 인수들과 반환형은 Double 형이므로 이점을 사용할 때 주의하여야 한다.
+
+- 코드2 구현 👍👍
+  - 2개의 최소공배수를 구할때와 동일하게 N개의 최소공배수도 구할 수 있다.
