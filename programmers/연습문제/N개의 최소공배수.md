@@ -38,10 +38,11 @@ fun solution(arr: IntArray): Int {
 }
 ```
 
-## 코드 2
+## 코드 2 : orange4912
 
 ```kotlin
 fun solution(arr: IntArray): Int {
+  if (arr.size < 1 || arr.size >= 100) return 0
   var answer = arr[0]
   arr.forEach {
       answer = lcm(answer, it)
