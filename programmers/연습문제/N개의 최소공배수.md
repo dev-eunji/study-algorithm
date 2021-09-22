@@ -43,8 +43,6 @@ fun solution(arr: IntArray): Int {
 ```kotlin
 fun solution(arr: IntArray): Int {
   var answer = arr[0]
-
-  var first = arr[0]
   arr.forEach {
       answer = lcm(answer, it)
   }
