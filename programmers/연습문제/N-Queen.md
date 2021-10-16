@@ -5,7 +5,7 @@
 
 - Level3
 
-## 해결 과정
+## 해결 과정 👍
 
 1. 각 행을 돌면서, 행마다 각 열의 조건을 체크하고 (`check()`) 조건을 만족하면 Q를 해당 열에 놓는다.
 2. 마지막 행까지 도달했다면, `result +1`을 하고 `result`가 최종 반환 값이다.
@@ -52,3 +52,9 @@ class Solution {
   ```kotlin
   Math.abs(arr[x]-arr[i]) == Math.abs(x - i)
   ```
+
+- 퀸 유명한 완전 탐색이라고 배우고 갑니다.
+<img src="../res/programmers_queen.png" width="400" height="400" />
+
+
+
