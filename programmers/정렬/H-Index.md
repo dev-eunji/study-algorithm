@@ -50,6 +50,7 @@ fun solution(citations: IntArray): Int {
 
 ## 배운점
 - 오름차순, 내림차순 
+- forEach 는 break, continue 못씀, return@forEach 를 써야되는데 프로그래머스에서 인식을 못한다.
 
 ## 풀이 참고
 
