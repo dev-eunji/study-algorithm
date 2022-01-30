@@ -45,6 +45,46 @@ class Solution {
 }
 ```
 
+## 코드 2 orange4912 study
+
+```kotlin
+class Solution {
+  var answer = 0
+  fun solution(n: Int): Int {
+      dfs(IntArray(n){0}, 0, n)
+      return answer
+  }
+
+  fun dfs(board: IntArray, row: Int, n: Int) {
+      if (row == n) { // row가 끝까지 갔으면 성공
+          answer++
+          return
+      }
+      for (i in 0 until n) {
+          board[row] = i // i 행에 몇 번째 열에 Q 가 놓여있는지 저장
+          if (isQueenCheck(board, row)) {
+              dfs(board, row + 1, n)
+          }
+      }
+  }
+
+  fun isQueenCheck(board: IntArray, row: Int): Boolean {
+      for (i in 0 until row) { 
+          // board[0] = 2 0번째 행의 2번째에 놓여져 있다.
+          if (board[row] == board[i]) { // 같은 행인지 검사
+              return false
+          }
+
+          // 대각선 체크(가로 길이 차이 == 세로 길이 차이)
+          if(Math.abs(board[row] - board[i]) == row - i) {
+              return false
+          }
+      }
+      return true
+  }
+}
+```
+
 ## 배운 점
 
 - 대각선 체크
@@ -55,6 +95,8 @@ class Solution {
 
 - 퀸 유명한 완전 탐색이라고 배우고 갑니다.
 <img src="../res/programmers_queen.png" width="400" height="400" />
+
+- 2차원 뱌열 행, 열 구분이 계속 헷갈린다.ㅠ https://woodforest.tistory.com/115
 
 
 
