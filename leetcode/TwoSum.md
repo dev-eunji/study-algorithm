@@ -24,6 +24,28 @@ fun twoSum(nums: IntArray, target: Int): IntArray {
 }
 ```
 
+## 코드 1 (hashMap 이용)
+
+```kotlin
+fun twoSum(nums: IntArray, target: Int): IntArray {
+    val hashMap = hashMapOf<Int, Int>()
+    val answer = IntArray(2) { 0 }
+    nums.forEachIndexed { index, num ->
+        val findSum = target - num
+        if (hashMap.contains(findSum)) {
+            hashMap[findSum]?.let {
+                return intArrayOf(
+                    index,
+                    it
+                )
+            }
+        }
+        hashMap[num] = index
+    }
+    return answer
+}
+```
+
 ## 코드 2: 다른 사람 코드
 
 ```kotlin
