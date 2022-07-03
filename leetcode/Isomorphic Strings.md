@@ -9,24 +9,8 @@
 
 1. 같은 구조의 문자열인지 체크
 2. 두개의 키 값의 값이 다른지 비교
-3. 
 
 ## 코드 1
-
-```kotlin
-fun twoSum(nums: IntArray, target: Int): IntArray {
-    for (i in nums.indices) {
-        for (j in nums.indices) {
-            if (i != j && nums[i] + nums[j] == target) {
-                return intArrayOf(i, j)
-            }
-        }
-    }
-    return intArrayOf(0)
-}
-```
-
-## 코드 1 (hashMap 이용)
 
 ```kotlin
 fun isIsomorphic(s: String, t: String): Boolean {
