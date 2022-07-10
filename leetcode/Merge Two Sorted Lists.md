@@ -54,6 +54,7 @@ fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
         else -> list1.apply { next = mergeTwoLists(list2, list1.next) }
     }
 }
+```
 
 ## 배운 점
 1. Linked List 복습
