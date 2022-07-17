@@ -41,7 +41,8 @@ public int maxProfit(int[] prices) {
 
 ## 배운 점
 1. `kotlin coerceAtMost, coerceAtLeast` 
-`
+
+```
 /**
  * Ensures that this value is not greater than the specified [maximumValue].
  * 
@@ -52,9 +53,9 @@ public int maxProfit(int[] prices) {
 public fun Int.coerceAtMost(maximumValue: Int): Int {
     return if (this > maximumValue) maximumValue else this
 }
-`
+```
 
-`
+```
 /**
  * Ensures that this value is not less than the specified [minimumValue].
  * 
@@ -65,5 +66,5 @@ public fun Int.coerceAtMost(maximumValue: Int): Int {
 public fun Int.coerceAtLeast(minimumValue: Int): Int {
     return if (this < minimumValue) minimumValue else this
 }
-`
+```
 
