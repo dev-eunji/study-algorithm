@@ -56,7 +56,7 @@ public int longestPalindrome(String s) {
 }
 ```
 
-## 배운 점
+## 배운 점 👍
 1. 조합 가능한 문자열 회문을 구할 때 짝수, 홀수 맵으로 key: 문자, value: 횟수 
 2. length 가 홀수인 경우
  - 회문이 안 되지만, 문자열의 중앙에서 회문이 가능하다.
