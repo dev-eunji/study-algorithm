@@ -52,6 +52,6 @@ def firstBadVersion(self, n) -> int:
 
 ## 배운 점
 1. mid 값을 계산 할 경우 `mid = left + (right - left) / 2` [익숙해 지자]
- - ``mid = (left + right) / 2` 는 Int 범위를 넘어가게 된다.
+ - `mid = (left + right) / 2` 는 Int 범위를 넘어가게 된다.
 
 
