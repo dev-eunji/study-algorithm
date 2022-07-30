@@ -13,7 +13,7 @@
  - else root 반환
 
 
-## 코드 1 (Recursive, 
+## 코드 1 (Recursive, Iterative)
 
 ```kotlin (Recursive)
 fun lowestCommonAncestor(root: TreeNode?, p: TreeNode?, q: TreeNode?): TreeNode? {
