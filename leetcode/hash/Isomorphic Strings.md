@@ -1,4 +1,4 @@
-# Two Sum
+# Isomorphic Strings
 
 > [leetcode > 205 > TwoIsomorphic Stringsm](https://leetcode.com/problems/isomorphic-strings)
 > 출처: leetcode, [https://leetcode.com]
