@@ -1,9 +1,9 @@
-# Two Sum
+# Add Two Numbers
 
 > [leetcode > 2 > Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
 > 출처: leetcode, [https://leetcode.com]
 
-- Level2
+- Medium
 
 ## 해결 과정
 
