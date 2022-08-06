@@ -1,9 +1,9 @@
-# Two Sum
+# Is Subsequence
 
 > [leetcode > 329 > Is Subsequence](https://leetcode.com/problems/is-subsequence)
 > 출처: leetcode, [https://leetcode.com]
 
-- Level1
+- easy
 
 ## 해결 과정
 
