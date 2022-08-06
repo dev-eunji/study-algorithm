@@ -1,4 +1,4 @@
-# Two Sum
+# Middle of the Linked List
 
 > [leetcode > 876 > Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list)
 > 출처: leetcode, [https://leetcode.com]
