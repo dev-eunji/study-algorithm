@@ -13,7 +13,7 @@
 4.  위 세 과정을 계속해서 반복하며 Happy Number 로 판단되는 경우 true 를 리턴하고 영원히 반복되는 Cycle 을 형성하는 경우 false 를 리턴합니다. 
 
 
-## 코드 1 (Recursive, Iterative)
+## 코드 1 (HashTable, Two Pointer)
 
 ```kotlin (HashTable)
 fun isHappy(n: Int): Boolean {
