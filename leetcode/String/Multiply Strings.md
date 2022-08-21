@@ -7,11 +7,11 @@
 
 ## 해결 과정
 
-1. 문자열 char를 숫자로 변경하여`- '0'`, 곱한다.(`result[i + j + 1] += n1 * n2`) 
+1. 문자열 char를 숫자로 변경하여 곱한다.
 
-## 코드 1 (Recursive, Iterative)
+## 코드 1
 
-```kotlin (HashMap)
+```kotlin
 fun multiply(num1: String, num2: String): String {
     if ("0" == num1 || "0" == num2) return "0"
 
