@@ -98,7 +98,7 @@ fun longestCommonPrefix(strs: Array<String>): String {
 ```
 
 ## 코드 2 (Most Votes)
-```
+```Java
 public String longestCommonPrefix(String[] strs) {
     if (strs == null || strs.length == 0)
         return "";
