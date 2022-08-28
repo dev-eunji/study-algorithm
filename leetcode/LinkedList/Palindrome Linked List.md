@@ -61,7 +61,7 @@ private fun ListNode.reverse(): ListNode? {
 }
 ```
 
-## 코드 2 ()
+## 코드 2 (Most Votes)
 
 ```Java
 public boolean isPalindrome(ListNode head) {
