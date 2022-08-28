@@ -1,7 +1,7 @@
 # Palindrome Linked List
 
 > [leetcode > 234 > Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)
-> 출처: leetcode, [https://leetcode.com]
+- 출처: leetcode, [https://leetcode.com]
 
 - Level Easy (이게 Easy ㅠ)
 
