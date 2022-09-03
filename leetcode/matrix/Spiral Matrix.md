@@ -48,7 +48,7 @@ fun spiralOrder(matrix: Array<IntArray>): List<Int> {
     return answer
 }
 
-복습 (index 변수 변경하다보면 디버깅이 어려움)
+// 복습 (index 변수 변경하다보면 디버깅이 어려움)
 fun spiralOrder(matrix: Array<IntArray>): List<Int> {
     val answer = mutableListOf<Int>()
     if (matrix.isEmpty()) {
