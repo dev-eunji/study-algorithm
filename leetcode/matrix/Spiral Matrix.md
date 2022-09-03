@@ -47,6 +47,45 @@ fun spiralOrder(matrix: Array<IntArray>): List<Int> {
     }
     return answer
 }
+
+복습 (index 변수 변경하다보면 디버깅이 어려움)
+fun spiralOrder(matrix: Array<IntArray>): List<Int> {
+    val answer = mutableListOf<Int>()
+    if (matrix.isEmpty()) {
+        return answer
+    }
+
+    var rowStart = 0
+    var rowEnd = matrix.size - 1
+    var colStart = 0
+    var colEnd = matrix[0].size - 1
+
+    while (rowStart <= rowEnd && colStart <= colEnd) {
+        for (i in colStart .. colEnd) { // top (left -> right)
+            answer.add(matrix[rowStart][i])
+        }
+        rowStart++
+        for (i in rowStart .. rowEnd) { // right (up -> bottom)
+            answer.add(matrix[i][colEnd])
+        }
+        colEnd--
+        if (rowStart <= rowEnd) {
+            for (i in colEnd downTo colStart) { // bottom (right -> left)
+                answer.add(matrix[rowEnd][i])
+            }    
+        }
+        rowEnd--
+
+        if (colStart <= colEnd) {
+            for (i in rowEnd downTo rowStart) { // left (bottom -> top)
+                answer.add(matrix[i][colStart])
+            }   
+        }
+        colStart++
+    }
+
+    return answer
+}
 ```
 
 ## 코드 2 (다른 사람 코드 Most Votes)
