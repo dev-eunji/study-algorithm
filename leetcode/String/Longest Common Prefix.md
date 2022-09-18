@@ -125,4 +125,5 @@ public String longestCommonPrefix(String[] strs) {
 
 ## 질문
 - Most Votes 풀이를 보면 `first`, `last` 만 비교하는데 왜 가능한지 모르겠다.
+-  -> sort 해서 작은거 제일 긴 문자열 비교하서 가능했다.
 
