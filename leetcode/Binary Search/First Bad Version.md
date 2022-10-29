@@ -54,6 +54,23 @@ def firstBadVersion(self, n) -> int:
 1. mid 값을 계산 할 경우 `mid = left + (right - left) / 2` [익숙해 지자]
  - `mid = (left + right) / 2` 는 Int 범위를 넘어가게 된다.
 
+2. 아래의 형태(기본적)로 이진 탐색을 하면 Time Limit Exceeded 가 난다.
+- 범위를 좁혀가는 걸 해답을 찾는 부분에서 잘 확인 해야된다.
+``` (Time Limit Exceeded)
+if (isBadVersion(mid)) {
+    right = right--
+} else {
+    left = mid++
+}
+```
+```
+if (isBadVersion(mid)) {
+    right = mid - 1
+} else {
+    left = mid + 1
+}
+```
+
 ### 참고
 Int 범위 관련 문제 (level1): https://school.programmers.co.kr/learn/courses/30/lessons/12943
 
