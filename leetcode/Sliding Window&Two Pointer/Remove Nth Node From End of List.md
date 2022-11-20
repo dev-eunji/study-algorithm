@@ -1,6 +1,6 @@
-# removeNthFromEnd
+# Remove Nth Node From End of List
 
-> [leetcode > 19 > removeNthFromEnd](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
+> [leetcode > 19 > Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
 > 출처: leetcode, [https://leetcode.com]
 
 - Level Medium [Two Pointer]
